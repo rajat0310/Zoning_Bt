@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Zoning_Bt/static/css/main.df175ca5.css",
+    "main.js": "/Zoning_Bt/static/js/main.fd8c32f0.js",
+    "static/js/453.59117019.chunk.js": "/Zoning_Bt/static/js/453.59117019.chunk.js",
+    "index.html": "/Zoning_Bt/index.html",
+    "main.df175ca5.css.map": "/Zoning_Bt/static/css/main.df175ca5.css.map",
+    "main.fd8c32f0.js.map": "/Zoning_Bt/static/js/main.fd8c32f0.js.map",
+    "453.59117019.chunk.js.map": "/Zoning_Bt/static/js/453.59117019.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df175ca5.css",
+    "static/js/main.fd8c32f0.js"
+  ]
+}
