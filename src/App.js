@@ -11,7 +11,7 @@ function App() {
       <div id="nav">
         {/* Add logo image before the h1 tag */}
         <img
-          src="/images/better-trucks-logo.png"
+          src={`${process.env.PUBLIC_URL}/images/better-trucks-logo.png`}
           alt="Logo"
           style={{ height: '40px', marginRight: '10px' }} // Adjust the size and spacing as needed
         />
