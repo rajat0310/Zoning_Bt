@@ -1,0 +1,25 @@
+/* HomeTab.css */
+#checkbox-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Map container styles */
+#map {
+  position: fixed; /* Fix the map to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  z-index: -1; /* Optional: if you want to make sure the map stays behind other UI elements */
+}

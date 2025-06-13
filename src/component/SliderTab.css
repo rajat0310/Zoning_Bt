@@ -1,0 +1,38 @@
+/* SliderTab.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#comparison-container {
+  display: flex;
+  height: 100%;
+}
+
+#before, #after {
+  flex: 1;
+  height: 100%;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px; /* Set height for the map */
+}
+
+body * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}

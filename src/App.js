@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import HomeTab from './component/HomeTab';
+import SliderTab from './component/SliderTab';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('home');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="nav">
+        {/* Add logo image before the h1 tag */}
+        <img
+          src="/images/better-trucks-logo.png"
+          alt="Logo"
+          style={{ height: '40px', marginRight: '10px' }} // Adjust the size and spacing as needed
+        />
+        <h1>Chicago Zones: Population Density</h1>
+        <div className="nav-buttons">
+          <button
+            className={activeTab === 'home' ? 'active' : ''}
+            onClick={() => setActiveTab('home')}
+          >
+            Home
+          </button>
+          <button
+            className={activeTab === 'compare' ? 'active' : ''}
+            onClick={() => setActiveTab('compare')}
+          >
+            Compare View
+          </button>
+        </div>
+      </div>
+
+
+      <div id="content">
+        {activeTab === 'home' && <HomeTab />}
+        {activeTab === 'compare' && <SliderTab />}
+      </div>
     </div>
   );
 }
